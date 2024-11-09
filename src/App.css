@@ -1,0 +1,53 @@
+/* General Styles */
+*{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f2b46;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-header .logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  .app-header .logo h1 {
+    margin: 0;
+    font-size: 20px;
+  }
+}
