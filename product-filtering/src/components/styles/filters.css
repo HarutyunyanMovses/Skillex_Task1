@@ -1,0 +1,60 @@
+/* General Filter Container Styling */
+.filters {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  /* Filter Section Styling */
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .filter-section select,
+  .filter-section input[type="number"],
+  .filter-section input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .filter-section select:focus,
+  .filter-section input:focus {
+    outline: none;
+    border-color: #36d7b7;
+  }
+  
+  /* Range Input Label Styling */
+  #price-range + .range-value,
+  #rating + .range-value {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #777;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .filters {
+      width: 100%;
+      position: relative;
+      max-height: none;
+    }
+  }
+  
